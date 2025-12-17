@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+
+
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Index - iPortfolio Bootstrap Template</title>
@@ -34,6 +38,29 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <style> 
+  /* Ligne séparatrice animée avec gradient */
+  .section-divider {
+      height: 4px;                /* épaisseur de la ligne */
+      width: 100%;                /* largeur complète */
+      margin: 50px 0;             /* espace au-dessus et en dessous */
+      border-radius: 2px;         /* coins arrondis */
+      background: linear-gradient(270deg, #007bff, #00d4ff, #007bff); /* gradient bleu clair → bleu foncé → bleu clair */
+      background-size: 600% 100%; /* étirement du gradient pour animation */
+      animation: gradientMove 4s ease infinite; /* animation infinie */
+  }
+  
+  /* Animation du gradient */
+  @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+  }
+  </style>
+
+
+
 </head>
 
 <body class="index-page">
@@ -149,10 +176,17 @@ My goal is to bridge data science and software development to create impactful a
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
+    <div class="section-divider"></div>
+<!-- Stats Section -->
 <section id="stats" class="stats section">
 
   <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <!-- Section Title -->
+    <div class="section-title" data-aos="fade-up">
+      <h2>📊 My Achievements</h2>
+      <p>Overview of my projects, certifications, practice hours, and collaborations in data science and analytics.</p>
+    </div>
 
     <div class="row gy-4">
 
@@ -164,7 +198,7 @@ My goal is to bridge data science and software development to create impactful a
           <p><strong>Projects Completed</strong><br>
           <span>Academic & personal data science projects</span></p>
         </div>
-      </div><!-- End Stats Item -->
+      </div>
 
       <!-- Certifications -->
       <div class="col-lg-3 col-md-6">
@@ -174,7 +208,7 @@ My goal is to bridge data science and software development to create impactful a
           <p><strong>Certificates & Workshops</strong><br>
           <span>Data science, ML & AI training</span></p>
         </div>
-      </div><!-- End Stats Item -->
+      </div>
 
       <!-- Practice Hours -->
       <div class="col-lg-3 col-md-6">
@@ -184,7 +218,7 @@ My goal is to bridge data science and software development to create impactful a
           <p><strong>Hours of Practice</strong><br>
           <span>Data analysis, modeling & coding</span></p>
         </div>
-      </div><!-- End Stats Item -->
+      </div>
 
       <!-- Collaborations -->
       <div class="col-lg-3 col-md-6">
@@ -194,13 +228,16 @@ My goal is to bridge data science and software development to create impactful a
           <p><strong>Collaborations</strong><br>
           <span>Team projects & academic research</span></p>
         </div>
-      </div><!-- End Stats Item -->
+      </div>
 
     </div>
 
   </div>
 </section>
 
+
+
+<div class="section-divider"></div>
 
     </section><!-- /Stats Section -->
 
@@ -345,7 +382,8 @@ My goal is to bridge data science and software development to create impactful a
       </div>
     
     </section><!-- /Skills Section -->
-    
+
+    <div class="section-divider"></div>
 
     <!-- Resume Section -->
     <section id="resume" class="resume section">
@@ -574,12 +612,104 @@ My goal is to bridge data science and software development to create impactful a
 
     </section><!-- /Resume Section -->
 
+    <div class="section-divider"></div>
+<!-- Projects Section -->
+<section id="projects" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>🌟 Projects</h2>
+    <p>Selected academic and team projects showcasing my expertise in statistics, data science, optimization, and software development.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up">
+
+    <div class="row">
+
+      <!-- Project 1 -->
+      <div class="col-lg-6">
+        <div class="resume-item">
+          <h4>Master’s Thesis: Estimation of the Extreme Value Index under Truncation</h4>
+          <h5>30 May 2024 – 22 Nov 2024</h5>
+          <p><em>Research Project</em></p>
+          <ul>
+            <li>Conducted advanced research on extreme value theory under truncation.</li>
+            <li>Implemented Hill, Pickands, and DEdH estimators for bias and MSE analysis.</li>
+            <li>Applied results to hydrological and financial data for quantile and return period estimation.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-lg-6">
+        <div class="resume-item">
+          <h4>Python Project Presentation at AIMS Senegal</h4>
+          <p><em>Team Project</em></p>
+          <ul>
+            <li>Developed and presented a Python-based data science project to faculty and peers.</li>
+            <li>Applied data analysis, visualization, and machine learning techniques.</li>
+            <li>Focused on reproducibility and clear communication of results.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-lg-6">
+        <div class="resume-item">
+          <h4>Web Data Extraction Application</h4>
+          <p><em>Team Project</em></p>
+          <ul>
+            <li>Built a web scraping application using BeautifulSoup.</li>
+            <li>Designed data cleaning and preprocessing pipelines.</li>
+            <li>Enabled CSV export for further data analysis.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="col-lg-6">
+        <div class="resume-item">
+          <h4>Data Analysis of Tourist Visits to an Amazon Monument</h4>
+          <p><em>Team Project</em></p>
+          <ul>
+            <li>Analyzed large-scale datasets to identify visitor trends.</li>
+            <li>Applied statistical models incorporating demographic and weather data.</li>
+            <li>Generated predictive insights to support decision-making.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="col-lg-6">
+        <div class="resume-item">
+          <h4>Route Optimization for Delivery Services (VRP)</h4>
+          <h5>22 Jan 2025 – 24 Jan 2025</h5>
+          <p><em>Team Project</em></p>
+          <ul>
+            <li>Formulated and solved a Vehicle Routing Problem using MILP.</li>
+            <li>Integrated capacity, demand, and time-window constraints.</li>
+            <li>Implemented optimization using CVXPY.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- End /Projects Section -->
+
+
+<div class="section-divider"></div>
+
+
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>🌟 Portfolio</h2>
+        <h2>🌟 Certificates</h2>
         <p>Explore my certificates and attestations from workshops, internships, and courses, highlighting my skills in data science, machine learning, and applied statistics.</p>
       </div><!-- End Section Title -->
 
@@ -844,6 +974,7 @@ My goal is to bridge data science and software development to create impactful a
       </div>
 
     </section><!-- /Portfolio Section -->
+    <div class="section-divider"></div>
 
     <!-- Services Section -->
     <section id="services" class="services section">
@@ -911,6 +1042,79 @@ My goal is to bridge data science and software development to create impactful a
       </div>
 
     </section><!-- /Services Section -->
+
+
+
+
+
+    <div class="section-divider"></div>
+
+
+   <!-- Recommendations Section -->
+   <!-- Recommendations Section -->
+<section id="recommendations" class="testimonials section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>🌟 Recommendations</h2>
+    <p>Academic referees who can provide professional and research-based recommendations.</p>
+  </div>
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="row">
+
+      <!-- Recommendation 1 -->
+      <div class="col-lg-6">
+        <div class="testimonial-item">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            Abdou-Latifou Kedjeri demonstrates strong analytical thinking, research rigor, and commitment to statistical and data-driven problem solving.
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Aliou Diop</h3>
+          <h4>Professor of Mathematics (Statistics)</h4>
+          <p><em>University of Gaston Berger, Senegal</em></p>
+          <p>📧 aliou.diop@ugb.edu.sn | 📞 (+221) 762 567 414</p>
+        </div>
+      </div>
+
+      <!-- Recommendation 2 -->
+      <div class="col-lg-6">
+        <div class="testimonial-item mt-4 mt-lg-0">
+          <p>
+            <i class="bi bi-quote quote-icon-left"></i>
+            He consistently applies theoretical knowledge to real-world data science challenges with discipline and professionalism.
+            <i class="bi bi-quote quote-icon-right"></i>
+          </p>
+          <h3>Dr. Shaibu Osman</h3>
+          <h4>Senior Lecturer</h4>
+          <p><em>University of Health and Allied Sciences, Ghana</em></p>
+          <p>📧 sosman@uhas.edu.gh | 📞 (+233) 501 102 325</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<!-- End Recommendations Section -->
+
+
+
+
+
+
+
+
+
+
+
+<div class="section-divider"></div>
+
+
+
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -1041,6 +1245,11 @@ My goal is to bridge data science and software development to create impactful a
       </div>
 
     </section><!-- /Testimonials Section -->
+
+
+
+    <div class="section-divider"></div>
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
